@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+
+    <title>Home</title>
+</head>
+<body>
+    <header class="header">
+        <a href="https://littleboytechnology.fr/#services" class="logo" target="blank_"><img src="{{url_for('static', filename='./img/logo.jpg')}}" width="100px"/></a> 
+        <span class="title">Data Analyst</span>
+        <ul class="topnav topnav_mobile_show">
+          <button class="header__btn_close-topnav header__btn"><span class="icon-menu-close"></span></button>
+          <li class="topnav__item item-dropdown-menu">
+                <a class="nav-link dropdown-toggle topnav__link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Nos Analyses
+                </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+
+                  <li>
+                      <a href="/DWFA">
+                        <span> <img src="{{url_for('static', filename='./img/logo_entreprise/dwfa.png')}}" width="30px"/> <span>DWFA</span> </span>
+                      </a>
+                  </li>
+
+                  <li>
+                    <a href="#Lapage">
+                      <span> <img src="{{url_for('static', filename='./img/logo_entreprise/lapage.png')}}" width="30px"/> <span>Lapage</span> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#BottleNeck">
+                      <span> <img src="{{url_for('static', filename='./img/logo_entreprise/bottle_neck.png')}}" width="30px"/> <span>Bottle Neck</span> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#FAO">
+                      <span> <img src="{{url_for('static', filename='./img/logo_entreprise/fao.png')}}" width="30px"/> <span>FAO</span> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#LaplaceImmo">
+                      <span> <img src="{{url_for('static', filename='./img/logo_entreprise/laplace_immo.png')}}" width="30px"/> <span>Laplace Immo</span> </span>
+                    </a>
+                </li>
+
+                <li>
+                    <a href="#LeGrandMarché">
+                      <span> <img src="{{url_for('static', filename='./img/logo_entreprise/grand_marché.png')}}" width="30px"/> <span>Le Grand Marché</span> </span>
+                    </a>
+                </li>
+                  
+              </ul>
+          </li>
+          <li class="topnav__item">
+            <a href="/tools" class="topnav__link">
+                Nos Outils
+            </a>
+          </li>
+          <li class="topnav__item">
+            <a href="/contact" class="topnav__link">Contact</a>
+          </li>
+        </ul>
+    </header>
+
+    <main>
+        <video id="background-video" autoplay loop muted width="100%">
+        
+            <source src="../static/img/analysis.mp4"
+                    type="video/mp4">
+        
+                    <p>Votre navigateur ne prend pas en charge les vidéos HTML5.</p>
+        </video>
+    </main>
+</body>
+</html>

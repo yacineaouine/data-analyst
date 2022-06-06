@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/tools.css') }}">
+
+    <title>Nos Outils</title>
+</head>
+<body>
+
+    <nav>
+
+        <li class="topnav__item">
+            <a href="/" class="topnav__link">Home</a>
+        </li>
+    
+        <h1>Nos Outils</h1>
+
+    </nav>
+
+    <main class="container">
+
+        <img  src="{{url_for('static', filename='./img/tools/anaconda.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/excel.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/knime.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/office.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/pandas.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/python.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/scipy.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/SQL.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/tableau.png')}}" width="200px"/>
+        <img  src="{{url_for('static', filename='./img/tools/UML.png')}}" width="200px"/>
+
+    </main>
+    
+</body>
+</html>
